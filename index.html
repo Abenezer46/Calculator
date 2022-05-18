@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />    <link rel="stylesheet" href="style.css">
     <title>Calculator</title>
 </head>
 <body>
@@ -14,7 +14,14 @@
                 <input type="text" name="disp" id="disp">
             </div>
             <div class="buttons">
-                
+
+                <div class="row">
+                    <input type="button" value="(" name="vbracketleft" onclick="val(vbracketleft.value)">
+                    <input type="button" value=")" name="vbracketright" onclick="val(vbracketright.value)">
+                    <input type="button" value="C" name="Clear" class="clear" title="Click two times to clear result" id="clear">
+                    <input type="button" value= "X" class="delete" id="delete">            
+                </div>
+
                 <div class="row">
                     <input type="button" value="7" name="v7" onclick="val(v7.value)">
                     <input type="button" value="8" name="v8" onclick="val(v8.value)">
@@ -43,9 +50,7 @@
                     <input type="button" id="veql" value="=" name="veql" onclick="calculate()">
                     
                 </div>
-                <div class="row">
-                    <input type="button" value="C" name="Clear" class="clear" title="Click two times to clear result" id="clear">
-                </div>
+               
             </div>
         </form>
     </div>

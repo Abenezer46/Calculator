@@ -1,9 +1,11 @@
 let form = document.getElementsByTagName("form");
 let disp = document.getElementById("disp");
 
+
 function val(result){
     disp.value = disp.value + result;
 }
+
 function calculate(){
     if(disp.value == ""){
         alert("Please enter a number");
@@ -14,8 +16,13 @@ function calculate(){
 }
 
 let clear = document.getElementById('clear');
-
 clear.onclick = function() {
     disp.value = '';
+}
+
+let del = document.getElementById('delete');
+del.onclick = function() {
+    let strng =document.getElementById("disp").value;
+    document.getElementById("disp").value=strng.substring(0,strng.length-1);
 }
        
