@@ -88,6 +88,16 @@ form .buttons{
     border: 1px solid orangered;
 }
 
+#delete{
+    background: orange;
+    color: #dde1e7;
+}
+#delete:focus{
+    background: #dde1e7;
+    color: orange;
+    border: 1px solid orange;
+}
+
 #veql{
     background: lightseagreen; 
     color: #dde1e7;
