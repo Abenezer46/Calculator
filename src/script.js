@@ -22,7 +22,19 @@ clear.onclick = function() {
 
 let del = document.getElementById('delete');
 del.onclick = function() {
-    let strng =document.getElementById("disp").value;
-    document.getElementById("disp").value=strng.substring(0,strng.length-1);
+    let strng = document.getElementById("disp").value;
+    document.getElementById("disp").value = strng.substring(0,strng.length-1);
+}
+
+
+if("serviceWorker" in navigator) {
+    navigator.serviceWorker.register("sw.js").then(registration => {
+        console.log("SW Registered!");
+        console.log(registration);
+    })
+    .catch( error => {
+        console.log("SW Registered failed!");
+        console.log(error);
+    })
 }
        

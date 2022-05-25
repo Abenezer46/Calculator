@@ -1,4 +1,4 @@
-## Calculator App
+## Calculator PWA App
 ## Table of contents
 
 - [Overview](#overview)
