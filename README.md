@@ -26,7 +26,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Solution URL here](https://abcalculator.pages.dev/)
+- Solution URL: [Solution URL here](https://ab-calculator.pages.dev/)
 
 ## My process
 
