@@ -1,6 +1,6 @@
 {
-    "name" : "pwa example",
-    "short_name" : "pwa example",
+    "name" : "Calculator",
+    "short_name" : "Calculator",
     "start_url" : ".",
     "background_color" : "#6dcdb1",
     "theme_color": "#009578",
