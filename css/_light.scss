@@ -1,0 +1,116 @@
+$light_background: #F1F2F3;
+$light_toggle_background: #ffffff;
+$light_button_background: #ffffff;
+
+$sign_background: #4b5efc;
+$light_text: #000000;
+
+.light {
+    background-color: $light_background;
+    width: 375px;
+    height: min-content;
+    padding: 10px;
+    color: $light_text;
+    box-shadow: 6px 5px 7px #d1cad1;
+    border-radius: 10px;
+
+    .theme {
+        position: relative;
+        left: 150px;
+        border: none;
+        outline: none;
+        background-color: #d2d3da;
+        border-radius: 16px;
+        width: 72px;
+        height: 32px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        margin-bottom: 20px;
+        cursor: pointer;
+    }
+
+    .output {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        margin-right: 12px;
+        overflow: hidden;
+
+        .previous-input {
+            font-family: "Work Sans";
+            font-style: normal;
+            font-weight: 300;
+            font-size: 40px;
+            line-height: 47px;
+            display: flex;
+            align-items: center;
+            text-align: right;
+            opacity: 0.4;
+        }
+
+        .input {
+            border: none;
+            outline: none;
+            font-family: "Work Sans";
+            font-style: normal;
+            font-weight: 300;
+            font-size: 86px;
+            line-height: 86px;
+            height: 86px;
+            display: flex;
+            align-items: center;
+            text-align: right;
+            background-color: $light_background;
+            color: $light_text;
+        }
+    }
+
+    .buttons {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+
+        .row {
+            display: flex;
+            gap: 16px;
+
+            button {
+                width: 71px;
+                height: 72px;
+                background-color: #fff;
+                border: none;
+                border-radius: 22px;
+                font-family: "Work Sans";
+                font-style: normal;
+                font-weight: 400;
+                font-size: 32px;
+                line-height: 40px;
+                text-align: center;
+                cursor: pointer;
+
+                &:hover {
+                    box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.75);
+                }
+            }
+
+            .sign {
+                background: #4b5efc;
+                color: #fff;
+            }
+
+            .backspace {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .control {
+                background-color: #d2d3da;
+            }
+        }
+    }
+}

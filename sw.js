@@ -6,8 +6,8 @@ self.addEventListener("install", e => {
             (
                 [
                     "./",
-                    "./src/style.css",
-                    "./images/Calculator-icon192.png"
+                    "./css/style.css",
+                    "./assets/Calculator-icon192.png"
                 ]
             );
         })

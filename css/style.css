@@ -1,0 +1,214 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600;700&display=swap");
+.dark {
+  background-color: #17171c;
+  width: 375px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding: 10px;
+  color: #ffffff;
+  box-shadow: 6px 5px 7px #d1cad1;
+  border-radius: 10px;
+}
+.dark .theme {
+  position: relative;
+  left: 150px;
+  background-color: #2e2f38;
+  border-radius: 16px;
+  width: 72px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+.dark .output {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-right: 12px;
+  overflow: hidden;
+}
+.dark .output .previous-input {
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 40px;
+  line-height: 47px;
+  display: flex;
+  align-items: center;
+  text-align: right;
+  opacity: 0.4;
+}
+.dark .output .input {
+  border: none;
+  outline: none;
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 80px;
+  line-height: 86px;
+  height: 86px;
+  display: flex;
+  align-items: center;
+  text-align: right;
+  background-color: #17171c;
+  color: #ffffff;
+}
+.dark .buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.dark .buttons .row {
+  display: flex;
+  gap: 16px;
+}
+.dark .buttons .row button {
+  width: 71px;
+  height: 72px;
+  background-color: #2e2f38;
+  border: none;
+  border-radius: 22px;
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 40px;
+  text-align: center;
+  color: #ffffff;
+  cursor: pointer;
+}
+.dark .buttons .row .sign {
+  background: #4b5efc;
+  color: #fff;
+}
+.dark .buttons .row .backspace {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.dark .buttons .row .control {
+  background-color: #4E505F;
+}
+
+.light {
+  background-color: #F1F2F3;
+  width: 375px;
+  height: -webkit-min-content;
+  height: -moz-min-content;
+  height: min-content;
+  padding: 10px;
+  color: #000000;
+  box-shadow: 6px 5px 7px #d1cad1;
+  border-radius: 10px;
+}
+.light .theme {
+  position: relative;
+  left: 150px;
+  border: none;
+  outline: none;
+  background-color: #d2d3da;
+  border-radius: 16px;
+  width: 72px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+.light .output {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-right: 12px;
+  overflow: hidden;
+}
+.light .output .previous-input {
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 40px;
+  line-height: 47px;
+  display: flex;
+  align-items: center;
+  text-align: right;
+  opacity: 0.4;
+}
+.light .output .input {
+  border: none;
+  outline: none;
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 86px;
+  line-height: 86px;
+  height: 86px;
+  display: flex;
+  align-items: center;
+  text-align: right;
+  background-color: #F1F2F3;
+  color: #000000;
+}
+.light .buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.light .buttons .row {
+  display: flex;
+  gap: 16px;
+}
+.light .buttons .row button {
+  width: 71px;
+  height: 72px;
+  background-color: #fff;
+  border: none;
+  border-radius: 22px;
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 40px;
+  text-align: center;
+  cursor: pointer;
+}
+.light .buttons .row button:hover {
+  box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.75);
+}
+.light .buttons .row .sign {
+  background: #4b5efc;
+  color: #fff;
+}
+.light .buttons .row .backspace {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.light .buttons .row .control {
+  background-color: #d2d3da;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: #E5E5E5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}/*# sourceMappingURL=style.css.map */

@@ -1,73 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="theme-color" content="#ffa500">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />    
-    <link rel="stylesheet" href="/src/style.css">
-    <link rel="manifest" href="/manifest.json">
-    <link rel="apple-touch-icon" href="images/Calculator-icon128.png">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/style.css"/>
+    <link rel="manifest" href="./manifest.json">
+    <link rel="apple-touch-icon" href="./assets/Calculator-icon192.png">
     <title>Calculator</title>
-</head>
-<body>
-
-    <div>
-        <p>Calculator by : Abenezer Demissie</p>
-    </div>
-    
-    <div class="container">
-        <form action="#" name="form">
-            <div class="result">
-                <input type="text" name="disp" id="disp">
-            </div>
-            <div class="buttons">
-
-                <div class="row">
-                    <input type="button" value="(" name="vbracketleft" onclick="val(vbracketleft.value)">
-                    <input type="button" value=")" name="vbracketright" onclick="val(vbracketright.value)">
-                    <input type="button" value="C" name="Clear" class="clear" title="Click two times to clear result" id="clear">
-                    <input type="button" value= "X" class="delete" id="delete">            
-                </div>
-
-                <div class="row">
-                    <input type="button" value="7" name="v7" onclick="val(v7.value)">
-                    <input type="button" value="8" name="v8" onclick="val(v8.value)">
-                    <input type="button" value="9" name="v9" onclick="val(v9.value)">
-                    <input type="button" value="+" name="add" onclick="val(add.value)">
-                </div>
-
-                <div class="row">
-                    <input type="button" value="4" name="v4" onclick="val(v4.value)">
-                    <input type="button" value="5" name="v5" onclick="val(v5.value)">
-                    <input type="button" value="6" name="v6" onclick="val(v6.value)">
-                    <input type="button" value="-" name="sub" onclick="val(sub.value)">
-                </div>
-
-                <div class="row">
-                    <input type="button" value="1" name="v1" onclick="val(v1.value)">
-                    <input type="button" value="2" name="v2" onclick="val(v2.value)">
-                    <input type="button" value="3" name="v3" onclick="val(v3.value)">
-                    <input type="button" value="*" name="mul" onclick="val(mul.value)">
-                </div>
-
-                <div class="row">
-                    <input type="button" value="0" name="v0" class="v0" onclick="val(v0.value)">
-                    <input type="button" value="." name="vdot" onclick="val(vdot.value)">
-                    <input type="button" value="/" name="vdiv" onclick="val(vdiv.value)">
-                    <input type="button" id="veql" value="=" name="veql" onclick="calculate()">
-                    
-                </div>
-               
-            </div>
-        </form>
+  </head>
+  <body>
+    <div class="container light">
+      <div class="theme">
+        <img src="./assets/moon.png" alt="">
+      </div>
+      <div class="output">
+        <span data-previous-input class="previous-input">0</span>
+        <span data-input class="input">0</span>
+      </div>
+      <div class="buttons">
+        <div class="row">
+          <button class="delete control" id="clear">AC</button>
+          <button class="backspace control">(</button>
+          <button class="backspace control">)</button>
+          
+          <button class="sign" data-operation>/</button>
+        </div>
+        <div class="row">
+          <button data-number>7</button>
+          <button data-number>8</button>
+          <button data-number>9</button>
+          <button class="sign" data-operation>*</button>
+        </div>
+        <div class="row">
+          <button data-number>4</button>
+          <button data-number>5</button>
+          <button data-number>6</button>
+          <button class="sign" data-operation>-</button>
+        </div>
+        <div class="row">
+          <button data-number>1</button>
+          <button data-number>2</button>
+          <button data-number>3</button>
+          <button class="sign data-operation">+</button>
+        </div>
+        <div class="row">
+          <button class="zero" data-number>0</button>
+          <button data-number>.</button>
+          <button data-number>%</button>
+          <button class="sign">=</button>
+        </div>
+      </div>
     </div>
 
-
-    
-
-   
-    <script src="/src/script.js"></script>
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>

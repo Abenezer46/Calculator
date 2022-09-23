@@ -1,0 +1,35 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600;700&display=swap");
+
+
+@import "./dark";
+@import "./light";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+
+$lightBackground: #F1F2F3;
+$light_toggle_background: #ffffff;
+$light_button_background: #ffffff;
+
+$dark_background: #17171c;
+$dark_toggle_background: #2e2f38;
+$dark_button_background: #2e2f38;
+
+$sign_background: #4b5efc;
+$light_text: #000000;
+$dark_text: #ffffff;
+
+
+body {
+    background: #E5E5E5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
